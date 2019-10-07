@@ -19,3 +19,7 @@
   <img src="./img/Structure_Autosar_Classical_Adaptive.png" width="700" alt="AUTOSAR经典平台和自适应平台">
 
   <img src="./img/Structure_App.png" width="300" alt="AUTOSAR自适应平台的应用结构">
+
+  **Adaptive特点（见Figure1）**：1.AUTOSAR Runtime for Adaptive Applications（ARA）：提供ECU内部和内部网络通信、基础服务接口（比如诊断Diagnostics、网络管理Communication Management）；2.PSE51：应用可通过POSIX子集PSE51（Minimum Real-Time System Profile）直接访问操作系统；3.Adaptive应用至少有一个进程，每个进程加载到虚拟地址空间执行，并由执行管理器（Execution Management）管理；4.更新和配置管理（UCM, Update & Configuration Management），应用可以移除、增加、更新；5.使用C++——面向对象、动态内存管理、标准库。
+
+  
