@@ -22,7 +22,9 @@
 
   **Adaptive特点（见Figure1）**：1.AUTOSAR Runtime for Adaptive Applications（ARA）：提供ECU内部和内部网络通信、基础服务接口（比如诊断Diagnostics、网络管理Communication Management）；2.[PSE51](./PSE51.md)：应用可通过POSIX子集PSE51（Minimum Real-Time System Profile）直接访问操作系统；3.Adaptive应用至少有一个进程，每个进程加载到虚拟地址空间执行，并由执行管理器（Execution Management）管理；4.更新和配置管理（UCM, Update & Configuration Management），应用可以移除、增加、更新；5.使用C++——面向对象、动态内存管理、标准库；6.面向服务的架构，应用提供了服务接口（见Figure 2）；6.多个ECU在Adaptive平台上执行，通过Ethernet网络连接，基于[SOME/IP](./SOME-IP.md)（Scalable Service Oriented Middleware overIP）协议 。
 
-  **域控制器和网关**：以域为单位分配任务，如娱乐、车身控制、动力传动等，每个域都有域控制器，不同域的域控制器之间通过Ethernet通信，而汽车总线提供域控制器的
+  **域控制器和网关**：以域为单位分配任务，如娱乐、车身控制、动力传动等，每个域都有域控制器，不同域的域控制器之间通过Ethernet通信，而汽车总线提供域控制器的连接。其中`Connectivity Control`用于对外提供连接，比如板外测试、蓝牙、移动无线电。
+
+  **Classic和Adaptive如何通信**：通过Ethernet（SOME/IP协议）
 
   <img src="./img/Vehicle_Arch_Adap_Clas.png" width="700" alt="AUTOSAR经典平台和自适应平台内部连接">
 
