@@ -15,3 +15,4 @@
   设计和实现一个基于Matlab/Simulink RTW ECoder和参考AUTOSAR标准的自动代码生成工具，用户可使用工具箱的功能模块以及simulink自带的模块建立控制算法模型和基础软件模型。
 
   **研究内容：**1.研究Matlab/Simulink RTW ECoder的生成代码机制，并针对飞思卡尔MCU订制了RTWECoder生成代码流程的控制文件，实现自动生成ECU控制软件；2.研究AUTOSAR标准、Simulink S-Function和TLC编写AUTOSAR标准下的中间件；利用Simulink S-Function和[TLC](https://ww2.mathworks.cn/products/simulink-coder.html)（Target Language Compiler）目标语言编写Simulink模块库，包括RTE信号收发、特殊外设、任务管理、数字字典、网络管理、存储管理、CCP量测与标定7大类子模块库，*方便用于在模型中建立应用软件与中间件的通信、访问与配置硬件资源*；3.CCP协议，实现对模块中信号测量和标定。
+
